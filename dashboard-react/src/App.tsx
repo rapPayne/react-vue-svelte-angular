@@ -1,8 +1,8 @@
 import { CSSProperties } from 'react';
 import { BrowserRouter, Link, Routes, Route } from 'react-router-dom';
 import './App.css';
-import { Dashboard } from './Dashboard';
-import { About, Contact, NotFound } from './OtherComponents';
+import { Dashboard } from './components/Dashboard';
+import { About, Contact, NotFound } from './components/OtherComponents';
 
 function App() {
   return (

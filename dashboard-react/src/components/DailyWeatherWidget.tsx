@@ -1,5 +1,5 @@
 import { useEffect, useState, FC, CSSProperties } from 'react';
-import { codes } from './weatherCodes';
+import { codes } from '../weatherCodes';
 
 export const DailyWeatherWidget: FC = () => {
   const [forecasts, setForecasts] = useState<Forecast[]>([])
