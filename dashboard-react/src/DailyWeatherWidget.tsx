@@ -31,7 +31,7 @@ const ForecastFC: FC<ForecastFCProps> = ({ forecast }) => {
     <div style={styles.forecastWrapper}>
       <span style={styles.dayOfWeek}>{dayOfWeek}</span>
       <img src={`/images/${forecast.weatherCode}.png`} alt={codes[forecast.weatherCode]} style={styles.icon} />
-      <span style={styles.description}>{codes[forecast.weatherCode]}</span>
+      <span>{codes[forecast.weatherCode]}</span>
     </div>
   )
 }

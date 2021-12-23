@@ -33,6 +33,8 @@ const styles: { [Name: string]: CSSProperties } = {
   }
 }
 
+
+
 const DashboardWidget: FC = (props) => {
   const style: CSSProperties = {
     flexBasis: '300px',
@@ -46,6 +48,9 @@ const DashboardWidget: FC = (props) => {
     </section>
   </>
 }
+
+
+
 const RandomColorWidget: FC = () => {
   const style: CSSProperties = {
     backgroundColor: '#' + Math.floor(Math.random() * 0xffffff).toString(16),
