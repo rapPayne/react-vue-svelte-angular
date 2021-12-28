@@ -1,28 +1,33 @@
-import { useState, CSSProperties, FC, useEffect } from 'react';
+import { useState, CSSProperties, FC, useEffect, ReactElement } from 'react';
 import { DailyWeatherWidget } from './DailyWeatherWidget';
+import { RandomColorWidget } from './RandomColorWidget';
 
 interface Widget {
   sortOrder: number,
-  component: JSX.Element,
+  component: FC,
 }
 
 export const Dashboard = () => {
   const [widgets, setWidgets] = useState<Widget[]>([]);
   useEffect(() => {
-    const randomWidgets = makeRandomWidgets();
-    const dww: Widget = { sortOrder: 5, component: <DashboardWidget><DailyWeatherWidget /></DashboardWidget> };
-    setWidgets([...randomWidgets, dww]);
+    const randomWidgets: Widget[] = makeRandomWidgets();
+
+    // Add a DailyWeatherWidget to the random widgets
+    randomWidgets.push({ sortOrder: 5, component: DailyWeatherWidget });
+    randomWidgets.sort((a, b) => a.sortOrder - b.sortOrder);
+
+    setWidgets(randomWidgets);
   }, []);
   return (
     <section style={styles.dashboardWrapper}>
       {[...widgets]
-        .sort((a: Widget, b: Widget) => a.sortOrder - b.sortOrder)
-        .map((widget: Widget) => widget.component)}
+        .map((widget: Widget, i: number) => <DashboardWidget key={i}><widget.component /></DashboardWidget>)
+      }
     </section>
   )
 
   function makeRandomWidgets(numberOfWidgets = 25): Widget[] {
-    return [...Array(numberOfWidgets)].map<Widget>((_, i) => ({ sortOrder: i, component: <DashboardWidget key={i} />, }));
+    return [...Array(numberOfWidgets)].map<Widget>((_, i) => ({ sortOrder: i, component: RandomColorWidget, }));
   }
 }
 const styles: { [Name: string]: CSSProperties } = {
@@ -33,8 +38,6 @@ const styles: { [Name: string]: CSSProperties } = {
   }
 }
 
-
-
 const DashboardWidget: FC = (props) => {
   const style: CSSProperties = {
     flexBasis: '300px',
@@ -42,21 +45,10 @@ const DashboardWidget: FC = (props) => {
     flexGrow: 1,
     margin: 5,
   };
+  console.log("children is", props.children)
   return <>
     <section style={style}>
-      {props.children || <RandomColorWidget />}
+      {props.children}
     </section>
   </>
-}
-
-
-
-const RandomColorWidget: FC = () => {
-  const style: CSSProperties = {
-    backgroundColor: '#' + Math.floor(Math.random() * 0xffffff).toString(16),
-    height: '100%',
-  };
-  return <div style={style}>
-    Placeholder widget
-  </div>
 }
