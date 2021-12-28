@@ -72,7 +72,7 @@ The fix according to [this](https://github.com/sveltejs/template/issues/261) is 
 Another example: There are red squiglies in places where there aren't problems because Svelte isn't true JavaScript. This creates "warning blindness".
 
 ## Documentation
-The official site has dated and unclear information. Also discouraging. 
+The official [site](http://svelte.dev) has dated and unclear information. Also discouraging. 
 
 It's fairly clear that no one is being paid a salary to maintain documentation; the quality is low, IMHO. There's literally nothing there on using TypeScript. For example, what, exactly is the proper type for a Svelte component?
 
