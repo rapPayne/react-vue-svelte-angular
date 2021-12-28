@@ -1,0 +1,10 @@
+#widgetWrapper {
+  text-align: center;
+  height: 100%;
+}
+#daysWrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: stretch;
+}

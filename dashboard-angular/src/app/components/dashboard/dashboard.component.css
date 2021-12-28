@@ -1,0 +1,11 @@
+#dashboardWrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+.dashboardWidget {
+  flex-basis: 300px;
+  aspect-ratio: 16 / 9;
+  flex-grow: 1;
+  margin: 5px;
+}

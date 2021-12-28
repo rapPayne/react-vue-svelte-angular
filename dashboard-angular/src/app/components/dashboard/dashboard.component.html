@@ -1,0 +1,4 @@
+<section id="dashboardWrapper">
+  <dashboard-widget *ngFor="let widget of widgets" [child]="widget.component" class="dashboardWidget">
+  </dashboard-widget>
+</section>
