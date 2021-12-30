@@ -1,4 +1,5 @@
-import { useState, CSSProperties, FC, useEffect, ReactElement } from 'react';
+import { useState, CSSProperties, FC, useEffect } from 'react';
+import { DashboardWidget } from './DashboardWidget';
 import { DailyWeatherWidget } from './DailyWeatherWidget';
 import { RandomColorWidget } from './RandomColorWidget';
 
@@ -21,34 +22,28 @@ export const Dashboard = () => {
   return (
     <section style={styles.dashboardWrapper}>
       {[...widgets]
-        .map((widget: Widget, i: number) => <DashboardWidget key={i}><widget.component /></DashboardWidget>)
+        .map((widget: Widget, i: number) => (
+          <DashboardWidget key={i}>
+            <widget.component />
+          </DashboardWidget>
+        )
+        )
       }
     </section>
   )
 
+  /// Create the array of widgets for the dashboard
   function makeRandomWidgets(numberOfWidgets = 25): Widget[] {
-    return [...Array(numberOfWidgets)].map<Widget>((_, i) => ({ sortOrder: i, component: RandomColorWidget, }));
+    return [...Array(numberOfWidgets)].map<Widget>((_, i) => ({
+      sortOrder: i,
+      component: RandomColorWidget,
+    }));
   }
 }
 const styles: { [Name: string]: CSSProperties } = {
   dashboardWrapper: {
     display: "flex",
     flexWrap: "wrap",
-    justifyContent: "flex-start",
+    justifyContent: "space-between",
   }
-}
-
-const DashboardWidget: FC = (props) => {
-  const style: CSSProperties = {
-    flexBasis: '300px',
-    aspectRatio: '16 / 9',
-    flexGrow: 1,
-    margin: 5,
-  };
-  console.log("children is", props.children)
-  return <>
-    <section style={style}>
-      {props.children}
-    </section>
-  </>
 }

@@ -16,6 +16,8 @@ export class ForecastFCComponent implements OnInit {
 
   ngOnInit(): void {
     this.imgSrc = `/assets/images/${this.forecast.weatherCode}.png`;
-    this.dayOfWeek = new Intl.DateTimeFormat('en-US', { weekday: 'long' }).format(new Date(this.forecast.time))
+    this.dayOfWeek = new Intl.DateTimeFormat('en-US', {
+      weekday: 'short',
+    }).format(new Date(this.forecast.time))
   }
 }

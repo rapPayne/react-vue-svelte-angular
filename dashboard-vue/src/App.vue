@@ -6,7 +6,7 @@
 				<a href="/about" class="navLink">About Us</a>
 				<a href="/contact" class="navLink">Contact Us</a> -->
 
-        <router-link to="/" class="navLink">Home</router-link> |
+        <router-link to="/" class="navLink">Home</router-link>
         <router-link to="/about" class="navLink">About Us</router-link>
         <router-link to="/contact" class="navLink">Contact Us</router-link>
       </nav>

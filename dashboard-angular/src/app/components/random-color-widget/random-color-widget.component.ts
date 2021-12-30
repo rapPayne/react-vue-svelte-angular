@@ -9,6 +9,7 @@ import { Component, OnInit } from '@angular/core';
   `,
   styles: [`
     div {
+      background-color: yellow;
       height: 100%;
     }
   `],

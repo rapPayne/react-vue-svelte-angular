@@ -6,15 +6,13 @@ import RandomColorWidget from "./RandomColorWidget.vue";
 import DashboardWidget from "./DashboardWidget.vue";
 
 export default Vue.extend({
+  // The name of the component
   name: "Dashboard",
-  components: {
-    DashboardWidget,
-  },
-  data: function () {
-    return {
-      widgets,
-    };
-  },
+  // Object with a list of sub-components (child components)
+  components: { DashboardWidget },
+  // Function that returns all reactive data - if these change, we should re-draw the component
+  data: () => ({ widgets }),
+  // Object with a list of inputs (props) passed into this component from its parent
   props: {},
 });
 
@@ -23,6 +21,7 @@ const widgets = makeRandomWidgets().sort((a, b) => a.sortOrder - b.sortOrder);
 widgets.push({ sortOrder: 5, component: DailyWeatherWidget });
 widgets.sort((a, b) => a.sortOrder - b.sortOrder);
 
+/// Create the array of widgets for the dashboard
 function makeRandomWidgets(numberOfWidgets = 25) {
   return [...Array(numberOfWidgets)].map<any>((_, i) => ({
     sortOrder: i,
@@ -43,6 +42,6 @@ function makeRandomWidgets(numberOfWidgets = 25) {
 #dashboardWrapper {
   display: flex;
   flex-wrap: wrap;
-  justify-content: flex-start;
+  justify-content: space-between;
 }
 </style>

@@ -1,5 +1,3 @@
-TODO: 86 global.css
-TODO: 86 unused CSS (esp. h1 red)
 
 # Dashboard in Svelte
 

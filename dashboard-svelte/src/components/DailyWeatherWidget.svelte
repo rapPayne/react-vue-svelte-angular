@@ -16,7 +16,7 @@
 </script>
 
 <section id="widgetWrapper">
-  <h1>5 day weather forecast</h1>
+  <h1 id="title">5 day weather forecast</h1>
   <section id="daysWrapper">
     {#each forecasts as forecast}
       <Forecast {forecast} />
@@ -25,14 +25,16 @@
 </section>
 
 <style>
+  #title {
+    font-size: 24px;
+    text-transform: uppercase;
+  }
   #widgetWrapper {
     text-align: center;
     height: 100%;
   }
   #daysWrapper {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: stretch;
+    display: grid;
+    grid-template-columns: repeat(5, minmax(0, 1fr));
   }
 </style>

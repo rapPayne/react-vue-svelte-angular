@@ -2,11 +2,7 @@
 import Vue from "vue";
 export default Vue.extend({
   name: "RandomColorWidget",
-  data: function () {
-    return {
-      backgroundColor,
-    };
-  },
+  data: () => ({ backgroundColor }),
   beforeCreate() {
     backgroundColor = "#" + Math.floor(Math.random() * 0xffffff).toString(16);
   },

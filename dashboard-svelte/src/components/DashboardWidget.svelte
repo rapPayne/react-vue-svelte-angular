@@ -6,13 +6,13 @@ which as of now will be a RandomColorWidget or the WeatherWidget.
 <script lang="ts">
 </script>
 
-<section id="wrapper">
+<section id="widgetWrapper">
   <slot />
 </section>
 
 <style>
-  #wrapper {
-    flex-basis: 300px;
+  #widgetWrapper {
+    flex-basis: 400px;
     aspect-ratio: 16 / 9;
     flex-grow: 1;
     margin: 5px;

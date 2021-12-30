@@ -5,16 +5,9 @@ let forecasts: any[];
 
 export default Vue.extend({
   name: "DailyWeatherWidget",
-  components: {
-    Forecast,
-  },
-  data() {
-    return {
-      forecasts,
-    };
-  },
+  components: { Forecast },
+  data: () => ({ forecasts }),
   mounted() {
-    console.log("mounted");
     (async () => {
       const url = `https://api.open-meteo.com/v1/forecast?latitude=32.98&longitude=-96.68&daily=weathercode&timezone=UTC`;
       const daily = await fetch(url)
@@ -24,21 +17,15 @@ export default Vue.extend({
         time,
         weatherCode: daily.weathercode[i],
       }));
-      console.log("forecasts is", this.forecasts);
+      console.log("forecasts", this.forecasts);
     })();
-  },
-  beforeUpdate() {
-    console.log("before update");
-  },
-  updated() {
-    console.log("updated");
   },
 });
 </script>
 
 <template>
   <section id="widgetWrapper">
-    <h1>5 day weather forecast</h1>
+    <h1 id="title">5 day weather forecast</h1>
     <section id="daysWrapper">
       <Forecast
         :forecast="forecast"
@@ -51,14 +38,16 @@ export default Vue.extend({
 </template>
 
 <style scoped>
+#title {
+  font-size: 24px;
+  text-transform: uppercase;
+}
 #widgetWrapper {
   text-align: center;
   height: 100%;
 }
 #daysWrapper {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: stretch;
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
 }
 </style>

@@ -4,7 +4,5 @@ import { Directive, ViewContainerRef } from '@angular/core';
   selector: '[dashboardWidget]'
 })
 export class DashboardWidgetDirective {
-
   constructor(public vcr: ViewContainerRef) { }
-
 }

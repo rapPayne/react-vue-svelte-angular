@@ -1,4 +1,3 @@
-TODO: 86 the logo file
 
 # dashboard-vue
 

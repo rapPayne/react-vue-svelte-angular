@@ -1,10 +1,12 @@
+#title {
+  font-size: 24px;
+  text-transform: uppercase;
+}
 #widgetWrapper {
   text-align: center;
   height: 100%;
 }
 #daysWrapper {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: stretch;
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
 }

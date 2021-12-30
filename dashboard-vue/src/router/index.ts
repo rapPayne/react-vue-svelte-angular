@@ -3,6 +3,7 @@ import VueRouter, { RouteConfig } from 'vue-router'
 import Dashboard from '../components/Dashboard.vue'
 import About from '../components/About.vue'
 import Contact from '../components/Contact.vue'
+import NotFound from '../components/NotFound.vue'
 
 Vue.use(VueRouter)
 
@@ -22,6 +23,11 @@ const routes: Array<RouteConfig> = [
     name: 'Contact',
     component: Contact
   },
+  {
+    // will match everything
+    path: '*',
+    component: NotFound,
+  }
 ]
 
 const router = new VueRouter({

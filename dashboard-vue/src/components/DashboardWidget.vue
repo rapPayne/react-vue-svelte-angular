@@ -14,15 +14,15 @@ export default Vue.extend({
 </script>
 
 <template>
-  <section id="wrapper">
+  <section id="widgetWrapper">
     <slot />
   </section>
 </template>
 
 
-<style>
-#wrapper {
-  flex-basis: 300px;
+<style scoped>
+#widgetWrapper {
+  flex-basis: 400px;
   aspect-ratio: 16 / 9;
   flex-grow: 1;
   margin: 5px;

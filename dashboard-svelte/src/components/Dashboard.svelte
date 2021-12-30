@@ -10,6 +10,7 @@
   widgets.push({ sortOrder: 5, component: DailyWeatherWidget });
   widgets.sort((a, b) => a.sortOrder - b.sortOrder);
 
+  /// Create the array of widgets for the dashboard
   function makeRandomWidgets(numberOfWidgets = 25) {
     return [...Array(numberOfWidgets)].map((_, i) => ({
       sortOrder: i,
@@ -27,12 +28,9 @@
 </section>
 
 <style>
-  h1 {
-    color: red;
-  }
   #dashboardWrapper {
     display: flex;
     flex-wrap: wrap;
-    justify-content: flex-start;
+    justify-content: space-between;
   }
 </style>
