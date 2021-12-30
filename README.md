@@ -19,6 +19,9 @@ We're building a site whose main feature is a dashboard.
 With these requirements, we'll experience routing/navigation, consuming API data, encapsulation, realistic styling and layout with CSS.
 
 
+## Angular
+Disappointed that we can't have truly private/local components. DashboardWidget and RandomColorWidget are only known to DashboardComponent so they can be private. But because every component must be registered to a module (AppModule in this case), I had to export them.
+
 ## React
 `npx create-react-app --use-npm --template cra-template-typescript dashboard-react`
 
@@ -26,5 +29,6 @@ With these requirements, we'll experience routing/navigation, consuming API data
 https://joshcollinsworth.com/blog/introducing-svelte-comparing-with-react-vue
 and
 
-## Angular
-Disappointed that we can't have truly private/local components. DashboardWidget and RandomColorWidget are only known to DashboardComponent so they can be private. But because every component must be registered to a module (AppModule in this case), I had to export them.
+
+## Vue
+Much easier to learn than React or Angular.
