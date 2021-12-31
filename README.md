@@ -1,5 +1,18 @@
-# react-vue-svelte-angular
-Same app written in React vs Vue vs Svelte vs Angular
+# React vs Angular vs Vue vs Svelte
+Same app written in React, Vue, Svelte, and Angular
+
+## What is this?
+You're looking at a repository holding four versions of the same exact web application written using different frameworks.
+
+It's an app that simulates a dashboard app. It uses a bunch of placeholders with random colors to keep the app simple but we created one widget with a five-day weather forecast. With this we'll be able to show how React, Svelte, Angular, and Vue handle:
+- Responsive web design
+- Consuming an API service using Ajax
+- Complex layouts using flexbox and gridview
+- Client-side routing in a SPA
+- Several generations of components
+- Passing props
+- Maintaining component state
+- Dynamically creating components
 
 ## Rules
 To compare the frameworks apples-to-apples, they'll be uniform:
@@ -16,19 +29,14 @@ We're building a site whose main feature is a dashboard.
 - Responsive with one widget across on a phone. Like two across on an iPad portrait or three-ish when landscape. The widgets will be between ... ummm ... 350 and 500 pixels wide with a 16:9 aspect ratio.
 - One widget will be built out. It will consume data from a CORS API hosted somewhere. The others can be placeholders for a proof-of-concept.
 
-With these requirements, we'll experience routing/navigation, consuming API data, encapsulation, realistic styling and layout with CSS.
-
 
 ## Angular
-Disappointed that we can't have truly private/local components. DashboardWidget and RandomColorWidget are only known to DashboardComponent so they can be private. But because every component must be registered to a module (AppModule in this case), I had to export them.
+
 
 ## React
-`npx create-react-app --use-npm --template cra-template-typescript dashboard-react`
+
 
 ## Svelte
-https://joshcollinsworth.com/blog/introducing-svelte-comparing-with-react-vue
-and
 
 
 ## Vue
-Much easier to learn than React or Angular.

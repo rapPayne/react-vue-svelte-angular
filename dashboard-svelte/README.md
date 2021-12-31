@@ -1,4 +1,3 @@
-
 # Dashboard in Svelte
 
 This is the project in [Svelte](https://svelte.dev) apps. 
@@ -78,3 +77,5 @@ It's fairly clear that no one is being paid a salary to maintain documentation; 
 
 ## Hey! There's a REPL!
 So you can share code with other devs: https://svelte.dev/repl
+
+https://joshcollinsworth.com/blog/introducing-svelte-comparing-with-react-vue

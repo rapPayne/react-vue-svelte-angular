@@ -1,28 +1,14 @@
-
-# dashboard-vue
+# Dashboard in Vue
 
 ## Project setup
 ```
-yarn install
+npm install
 ```
 
 ### Compiles and hot-reloads for development
 ```
-yarn serve
+npm run serve
 ```
-
-### Compiles and minifies for production
-```
-yarn build
-```
-
-### Lints and fixes files
-```
-yarn lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
 
 # Overview
 Uses a virtual DOM like React. 
@@ -78,3 +64,5 @@ Just like in React, you need a key.
 
 ## Router
 Very different from the others. Vue-router is not declarative, it is imperative. You write it in JavaScript/TypeScript then add it as an argument to the instantiation of the app itself.
+
+Much easier to learn than React or Angular.
