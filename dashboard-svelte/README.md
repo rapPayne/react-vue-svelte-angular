@@ -1,4 +1,4 @@
-![Screengrab with Svelte](../screenshots/svelteLogo.jpg)
+![Svelte](../screenshots/svelteLogo.jpg)
 # Dashboard in Svelte
 
 ## How to run
