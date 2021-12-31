@@ -1,5 +1,8 @@
 <div style="display: flex;">
 <img src="./screenshots/reactLogo.jpg" alt="React" style="width: 20%" />
+<img src="./screenshots/angularLogo.jpg" alt="Angular" style="width: 20%" />
+<img src="./screenshots/vueLogo.jpg" alt="Vue" style="width: 20%" />
+<img src="./screenshots/svelteLogo.jpg" alt="Svelte" style="width: 20%" />
 </div>
 # React vs Angular vs Vue vs Svelte
 The same web app written in React, Vue, Svelte, and Angular
