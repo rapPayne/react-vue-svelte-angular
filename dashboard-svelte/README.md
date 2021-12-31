@@ -5,14 +5,18 @@
 $ npm install
 $ npm run dev
 ```
-The open a browser and hit http://localhost:5000
+Then open a browser and hit http://localhost:5000
 
 ## Overview of the framework
 Svelte is not as much a framework as it is a _compiler_. 
 
-Harris claims that this is faster. With latency being the bottleneck, I don't see how that's possible -- after the initial load, obviously.
+It is the newest entry here
+
+Its creator, Richard Harris claims that this is faster. With latency being the bottleneck, I don't see how that's possible -- after the initial load, obviously. But he's way smarter than me, so I'll yield.
 
 ## Brief impressions vs the other three
+Svelte was the most loved framework in a [recent poll](https://insights.stackoverflow.com/survey/2021#most-loved-dreaded-and-wanted-webframe-love-dread) and I can see why. It is IMHO the simplest to learn of the four and (as the name suggests) the most lightweight.
+
 Being a compiler, we don't create a bunch of executable JavaScript and put the entire app in the browser to run like the other frameworks. Instead, each request runs the compiler on the server, generates a page and sends it to the client.
 
 Not backed by a Google/Facebook/Amazon/Microsoft but it is headed by a camera-friendly, well-spoken, charismatic developer named Rich Harris. Very rare and very powerful combination.
@@ -78,3 +82,6 @@ It's fairly clear that no one is being paid a salary to maintain documentation; 
 So you can share code with other devs: https://svelte.dev/repl
 
 https://joshcollinsworth.com/blog/introducing-svelte-comparing-with-react-vue
+
+https://stefankrause.net/js-frameworks-benchmark8/table.html
+As expected, Svelte with no virtual DOM was the fastest by far on initial load but performed the slowest with major DOM changes once loaded.

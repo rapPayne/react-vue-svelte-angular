@@ -1,3 +1,4 @@
+![Vue](./screenshots/vueLogo.png)
 # Dashboard in Vue
 
 ## How to run
@@ -5,7 +6,7 @@
 $ npm install
 $ npm run serve
 ```
-The open a browser and hit http://localhost:8080
+Then open a browser and hit http://localhost:8080
 
 
 ## Overview of the framework
@@ -16,7 +17,21 @@ This and Vue keep the entire component in a single file with three sections
 2. `<template>` with HTML for structure
 3. `<style>` with CSS for styling and layout.
 
+Whereas React asks you to bring "HTML" into your JavaScript and Angular asks you to bring JavaScript into your HTML, Vue keeps them blissfully separate and yet leaves them in a single file. Easy to find. Easy to maintain.
+
 Uses a virtual DOM like React. 
+
+Their CLI has a GUI interface which is incredibly slick and sets the standard for ease of use.
+
+Very, very simple project. Minimalist. But it allows pluggable modules using the middleware pattern so it is highly extensible.
+```JavaScript
+Vue.use(SomePluggableModule)
+Vue.use(AnotherPluggableModule)
+Vue.use(YetAThirdPluggableModule)
+```
+
+It uses a combination of minimal JavaScript in the HTML and directives. So it fits between React (with zero directives and 100% JS-in-HTML) and Angular (100% directives and zero JS-in-HTML). But while that seems complex, I'd say it's the best of both worlds and thus easier to learn.
+
 
 Runs client-side like Angular and React. Uses directives like everybody else but they're Vue directives. Double-curly braces for interpolations like Angular.
 

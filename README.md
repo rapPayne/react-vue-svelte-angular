@@ -52,7 +52,9 @@ Here are the projects
 In the individual projects, I briefly list the differences between the frameworks but there are certain things they all share. They all ...
 - Are open sourced with community contributions
 - Are for web development
+- Use VS Code as the de-facto standard IDE
 - Create SPAs (single-page apps)
 - Have a CLI (command-line interface) that scaffolds a new project
 - Create a cool environment for devs that supports debugging in the browser with hot reload
 - Extend HTML for looping and conditionals so that the structure can be written declaratively
+- Performed well. They're all very, very fast.
