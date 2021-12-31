@@ -1,16 +1,21 @@
 # Dashboard in Vue
 
-## Project setup
+## How to run
+```bash
+$ npm install
+$ npm run serve
 ```
-npm install
-```
+The open a browser and hit http://localhost:8080
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
 
-# Overview
+## Overview of the framework
+
+## Brief impressions vs the other three
+This and Vue keep the entire component in a single file with three sections
+1. `<script>` with JavaScript for behaviour
+2. `<template>` with HTML for structure
+3. `<style>` with CSS for styling and layout.
+
 Uses a virtual DOM like React. 
 
 Runs client-side like Angular and React. Uses directives like everybody else but they're Vue directives. Double-curly braces for interpolations like Angular.

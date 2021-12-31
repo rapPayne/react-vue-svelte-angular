@@ -1,16 +1,20 @@
 # Dashboard in Svelte
 
-This is the project in [Svelte](https://svelte.dev) apps. 
-
-## Get started
-
+## How to run
 ```bash
-cd dashboard-svelte
-npm install
-npm run dev
+$ npm install
+$ npm run dev
 ```
+The open a browser and hit http://localhost:5000
 
-## Overall impressions
+## Overview of the framework
+Svelte is not as much a framework as it is a _compiler_. 
+
+Harris claims that this is faster. With latency being the bottleneck, I don't see how that's possible -- after the initial load, obviously.
+
+## Brief impressions vs the other three
+Being a compiler, we don't create a bunch of executable JavaScript and put the entire app in the browser to run like the other frameworks. Instead, each request runs the compiler on the server, generates a page and sends it to the client.
+
 Not backed by a Google/Facebook/Amazon/Microsoft but it is headed by a camera-friendly, well-spoken, charismatic developer named Rich Harris. Very rare and very powerful combination.
 
 The framework has some really cool bells and whistles that other frameworks don't have, like animations built in. But it lacks basic features that should probably have been prioritized.
@@ -21,15 +25,10 @@ Svelte uses [Rollup](https://rollupjs.org) for bundling instead of webpack.
 
 Svelte, like Vue and unlike React and Angular, does not allow private components, aka. two components in one file. Note that even though you **can** do this in Angular, you still need to register the component in the module.
 
-Navigate to [localhost:5000](http://localhost:5000). You should see your app running. 
-It does respond to live changes. Edit a component file in `src` and save it to see your changes.
-
 Compile errors show on the command line only. The browser never changes because it can't show what hasn't compiled. So you get no indication that there's a problem. Bottom line: Keep an eye on the command line compiler, not on the browser.
 
 ## Architecture
-It's not as much a framework as it is a compiler. We don't create a bunch of executable JavaScript and put the entire app in the browser to run. Instead, each request runs the compiler on the server, generates a page and sends it to the client.
 
-Harris claims that this is faster. With latency being the bottleneck, I don't see how that's possible -- after the initial load, obviously.
 
 ## Svelte vs SvelteKit
 Umm... Svelte is for generating components (?) and SvelteKit is for generating sites (?).
