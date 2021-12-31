@@ -1,4 +1,4 @@
-![Vue](../screenshots/vueLogo.png)
+![Vue](../screenshots/vueLogo.jpg)
 # Dashboard in Vue
 
 ## How to run
