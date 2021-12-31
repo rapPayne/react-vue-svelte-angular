@@ -34,8 +34,8 @@ Here are the projects
 ![Screengrab with Angular](screenshots/angular.png)
 
 ## [React](./dashboard-react)
-![Screengrab with React](screenshots/react.png?raw=true)
-<img src="./screenshots/react.png?raw=true" alt="Screengrab with React">
+![Screengrab with React](./screenshots/React.png?raw=true)
+<img src="./screenshots/React.png?raw=true" alt="Screengrab with React">
 
 ## [Vue](./dashboard-vue)
 ![Screengrab with Vue](screenshots/vue.png)
