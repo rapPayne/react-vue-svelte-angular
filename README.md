@@ -31,13 +31,13 @@ We're building a site whose main feature is a dashboard.
 
 Here are the projects
 ## [Angular](./dashboard-angular)
-![Screengrab with Angular](./screenshots/angular.png)
+![Screengrab with Angular](screenshots/angular.png)
 
 ## [React](./dashboard-react)
-![Screengrab with React](./screenshots/react.png)
+![Screengrab with React](screenshots/react.png)
 
 ## [Vue](./dashboard-vue)
-![Screengrab with Vue](./screenshots/vue.png)
+![Screengrab with Vue](screenshots/vue.png)
 
 ## [Svelte](./dashboard-svelte)
-![Screengrab with Svelte](./screenshots/svelte.png)
+![Screengrab with Svelte](screenshots/svelte.png)
