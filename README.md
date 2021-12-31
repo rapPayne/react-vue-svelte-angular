@@ -1,3 +1,6 @@
+<div style="display: flex;">
+<img src="./screenshots/reactLogo.jpg" alt="React" style="width: 20%" />
+</div>
 # React vs Angular vs Vue vs Svelte
 The same web app written in React, Vue, Svelte, and Angular
 
