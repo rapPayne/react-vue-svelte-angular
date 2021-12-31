@@ -12,7 +12,7 @@ import { DailyWeatherWidgetComponent } from './components/daily-weather-widget/d
 import { DashboardWidgetComponent } from './components/dashboard-widget/dashboard-widget.component';
 import { RandomColorWidgetComponent } from './components/random-color-widget/random-color-widget.component';
 import { DashboardWidgetDirective } from './components/dashboard-widget/dashboard-widget.directive';
-import { ForecastFCComponent } from './components/daily-weather-widget/forecast-fc.component';
+import { ForecastFCComponent } from './components/forecast/forecast-fc.component';
 
 @NgModule({
   declarations: [

@@ -1,5 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { codes } from './weatherCodes';
+import { Forecast } from 'src/app/types/Forecast';
+import { codes } from '../../weatherCodes';
 
 @Component({
   selector: 'forecast',
@@ -7,9 +8,9 @@ import { codes } from './weatherCodes';
   styleUrls: ['./forecast-fc.component.css']
 })
 export class ForecastFCComponent implements OnInit {
-  @Input() forecast: any;
+  @Input() forecast: Forecast = { time: "", weatherCode: 0 };
   dayOfWeek: String = "";
-  codes: any = codes;
+  codes: String[] = codes;
   imgSrc: String = "";
 
   constructor() { }

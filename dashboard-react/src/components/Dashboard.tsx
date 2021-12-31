@@ -14,7 +14,7 @@ export const Dashboard = () => {
     const randomWidgets: Widget[] = makeRandomWidgets();
 
     // Add a DailyWeatherWidget to the random widgets
-    randomWidgets.push({ sortOrder: 5, component: DailyWeatherWidget });
+    randomWidgets.push({ sortOrder: 3, component: DailyWeatherWidget });
     randomWidgets.sort((a, b) => a.sortOrder - b.sortOrder);
 
     setWidgets(randomWidgets);

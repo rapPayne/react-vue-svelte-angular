@@ -18,7 +18,7 @@ export default Vue.extend({
 
 const widgets = makeRandomWidgets().sort((a, b) => a.sortOrder - b.sortOrder);
 // Add a DailyWeatherWidget to the random widgets
-widgets.push({ sortOrder: 5, component: DailyWeatherWidget });
+widgets.push({ sortOrder: 3, component: DailyWeatherWidget });
 widgets.sort((a, b) => a.sortOrder - b.sortOrder);
 
 /// Create the array of widgets for the dashboard

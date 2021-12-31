@@ -3,7 +3,7 @@ This thing is a single thing displayed in the dashboard. It is one
 widget in the dashboard. It is a wrapper, wrapping the component itself
 which as of now will be a RandomColorWidget or the WeatherWidget.
 */
-import { Component, OnInit, Input, ViewChild } from '@angular/core';
+import { Component, OnInit, Input, ViewChild, Type } from '@angular/core';
 import { DashboardWidgetDirective } from './dashboard-widget.directive';
 
 // In the other three, styles were on the DashboardWidget itself. Here, the styles must be on the parent since we're not using transclusion in Angular.

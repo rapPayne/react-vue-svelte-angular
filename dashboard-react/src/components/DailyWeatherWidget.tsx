@@ -6,11 +6,12 @@ export const DailyWeatherWidget: FC = () => {
   const [forecasts, setForecasts] = useState<Forecast[]>([])
   useEffect(() => {
     (async function () {
-      const url = `https://api.open-meteo.com/v1/forecast?latitude=32.98&longitude=-96.68&daily=weathercode&timezone=UTC`;
-      const daily = await fetch(url)
-        .then<ForecastResponse>(res => res.json())
+      const url: RequestInfo = `https://api.open-meteo.com/v1/forecast?latitude=32.98&longitude=-96.68&daily=weathercode&timezone=UTC`;
+      const forecasts: Forecast[] = await fetch(url)
+        .then<ForecastResponse>((res: Response) => res.json())
         .then(res => res.daily)
-      setForecasts(daily.time.slice(0, 5).map((time, i) => ({ time, weatherCode: daily.weathercode[i] })))
+        .then<any>(daily => daily.time.slice(0, 5).map((time: String, i: number) => ({ time, weatherCode: daily.weathercode[i] })))
+      setForecasts(forecasts)
     })()
   }, []);
   console.log("forecasts", forecasts)

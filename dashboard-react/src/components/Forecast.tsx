@@ -11,7 +11,7 @@ interface ForecastFCProps {
   forecast: Forecast;
 }
 export const ForecastFC: FC<ForecastFCProps> = ({ forecast }) => {
-  const dayOfWeek = new Intl.DateTimeFormat('en-US', {
+  const dayOfWeek: String = new Intl.DateTimeFormat('en-US', {
     weekday: 'short',
   }).format(new Date(forecast.time))
   return (

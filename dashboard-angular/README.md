@@ -1,4 +1,4 @@
-# DashboardAngular
+# Dashboard in Angular
 
 Angular is bloated and heavy and frustrating. Just like Java and C# and Dart. No wonder it needs TypeScript.
 

@@ -4,7 +4,7 @@ import { RandomColorWidgetComponent } from '../random-color-widget/random-color-
 
 interface Widget {
   sortOrder: number,
-  component: any,  //RAP: Not sure what this should be
+  component: any,  // This is a real weakness of Angular
 }
 
 @Component({
@@ -20,7 +20,7 @@ export class DashboardComponent implements OnInit {
     const randomWidgets: Widget[] = this.makeRandomWidgets();
 
     // Add a DailyWeatherWidget to the random widgets
-    randomWidgets.push({ sortOrder: 5, component: DailyWeatherWidgetComponent });
+    randomWidgets.push({ sortOrder: 3, component: DailyWeatherWidgetComponent });
     randomWidgets.sort((a, b) => a.sortOrder - b.sortOrder);
     this.widgets = randomWidgets;
   }

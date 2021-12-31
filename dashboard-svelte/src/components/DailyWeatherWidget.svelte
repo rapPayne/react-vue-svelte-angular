@@ -1,7 +1,8 @@
 <script lang="ts">
-  import Forecast from "./Forecast.svelte";
+  import ForecastFC from "./Forecast.svelte";
 
   // The $: means "When this variable changes, rerender?"
+  // Because of this syntax, we can't apply TS types to it. (sheesh)
   $: forecasts = [];
   (async function () {
     const url = `https://api.open-meteo.com/v1/forecast?latitude=32.98&longitude=-96.68&daily=weathercode&timezone=UTC`;
@@ -19,7 +20,7 @@
   <h1 id="title">5 day weather forecast</h1>
   <section id="daysWrapper">
     {#each forecasts as forecast}
-      <Forecast {forecast} />
+      <ForecastFC {forecast} />
     {/each}
   </section>
 </section>
