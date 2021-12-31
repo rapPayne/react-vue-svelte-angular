@@ -1,3 +1,4 @@
+![React](../screenshots/reactLogo.jpg)
 ## Dashboard in React
 
 ## How to run
@@ -17,5 +18,7 @@ We don't use ids in React's JSX because they're not encapsulated like they are i
 It is the only one of the three frameworks that doesn't give us a shortcut to two-way binding. The others at least pretend to support two-way binding. React forces us to jump through some pretty tough hoops to get data from a textbox and back into state. You have to imperatively bind to a state variable - imperatively! and then rerender the component with the new value.
 
 Lifecycle is much tougher with React. Whereas all three of the others support events like `mounted` or `OnInit`, React relies on the `useEffect()` hook which is hugely powerful but cryptic as heck!
- 
+
+Largest community support. Largest library selection.
+
 `npx create-react-app --use-npm --template cra-template-typescript dashboard-react`

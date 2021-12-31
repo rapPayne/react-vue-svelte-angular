@@ -1,3 +1,4 @@
+![Angular](../screenshots/angularLogo.jpg)
 # Dashboard in Angular
 
 ## How to run
