@@ -1,10 +1,10 @@
 # React vs Angular vs Vue vs Svelte
-Same app written in React, Vue, Svelte, and Angular
+The same web app written in React, Vue, Svelte, and Angular
 
 ## What is this?
-You're looking at a repository holding four versions of the same exact web application written using different frameworks.
+You're looking at a repository holding four versions of the same **exact** web application written using different frameworks.
 
-It's an app that simulates a dashboard app. It uses a bunch of placeholders with random colors to keep the app simple but we created one widget with a five-day weather forecast. With this we'll be able to show how React, Svelte, Angular, and Vue handle:
+It's a dashboard app. It uses a bunch of placeholders with random colors to keep the app simple but we created one widget with a five-day weather forecast. With this we'll be able to show how React, Svelte, Angular, and Vue handle:
 - Responsive web design
 - Consuming an API service using Ajax
 - Complex layouts using flexbox and gridview
@@ -29,14 +29,15 @@ We're building a site whose main feature is a dashboard.
 - Responsive with one widget across on a phone. Like two across on an iPad portrait or three-ish when landscape. The widgets will be between ... ummm ... 350 and 500 pixels wide with a 16:9 aspect ratio.
 - One widget will be built out. It will consume data from a CORS API hosted somewhere. The others can be placeholders for a proof-of-concept.
 
+Here are the projects
+## [Angular](./dashboard-angular)
+![Screengrab with Angular](./screenshots/angular.png)
 
-## Angular
+## [React](./dashboard-react)
+![Screengrab with React](./screenshots/react.png)
 
+## [Vue](./dashboard-vue)
+![Screengrab with Vue](./screenshots/vue.png)
 
-## React
-
-
-## Svelte
-
-
-## Vue
+## [Svelte](./dashboard-svelte)
+![Screengrab with Svelte](./screenshots/svelte.png)
