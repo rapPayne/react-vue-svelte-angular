@@ -6,7 +6,9 @@
 </div>
 
 # React vs Angular vs Vue vs Svelte
-The same web app written in React, Vue, Svelte, and Angular
+The same web app written in React, Vue, Svelte, and Angular.
+
+This was all written in support of an article which you can find [here](https://via.placeholder.com/500x500.png?text=Coming%20soon!).
 
 ## What is this?
 You're looking at a repository holding four versions of the same **exact** web application written using different frameworks.
@@ -22,7 +24,7 @@ It's a dashboard app. It uses a bunch of placeholder widgets with random colors 
 - Dynamically creating components
 
 ## The rules
-To compare the frameworks apples-to-apples, they'll be uniform:
+To compare the frameworks apples-to-apples, they are uniform:
 - Use TypeScript
 - Use npm
 - No CSS preprocessors (like Sass, Less, Stylus, Tailwind, etc.)
@@ -54,14 +56,3 @@ Here are the projects
 
 ## [Svelte](./dashboard-svelte)
 ![Screengrab with Svelte](screenshots/Svelte.png)
-
-## How are they all alike?
-In the individual projects, I briefly list the differences between the frameworks but there are certain things they all share. They all ...
-- Are open sourced with community contributions
-- Are for web development
-- Use VS Code as the de-facto standard IDE
-- Create SPAs (single-page apps)
-- Have a CLI (command-line interface) that scaffolds a new project
-- Create a cool environment for devs that supports debugging in the browser with hot reload
-- Extend HTML for looping and conditionals so that the structure can be written declaratively
-- Performed well. They're all very, very fast.
