@@ -8,8 +8,6 @@
 # React vs Angular vs Vue vs Svelte
 The same web app written in React, Vue, Svelte, and Angular.
 
-This was all written in support of an article which you can find [here](https://via.placeholder.com/500x500.png?text=Coming%20soon!).
-
 ## The writeup
 Check out this fun and easy-to-follow [article](https://www.accelebrate.com/blog/react-angular-vue-svelte-comparison) for details. It has performance charts, commentary and comparisons on the four frameworks, and actually picks a winner! (Spoiler alert! React wins.) 
 
